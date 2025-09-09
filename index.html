@@ -1,0 +1,154 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kunstrum Kindhesten</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0; font-family: 'Montserrat', Arial, sans-serif; background: #fff; color: #222;
+    }
+    header {
+      text-align: center; padding: 50px 20px 20px 20px;
+    }
+    .logo-img {
+      width: 180px; max-width: 90vw; display: block; margin: 0 auto 16px auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      background: #f6f6f6;
+    }
+    header h1 {
+      font-size: 2.3rem; margin: 0;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+    header p {
+      margin: 15px 0 0 0; font-size: 1.1rem;
+      color: #666;
+    }
+    nav {
+      display: flex; justify-content: center; gap: 30px; margin: 20px 0 0 0;
+      font-size: 1rem;
+    }
+    nav a {
+      color: #222; text-decoration: none; font-weight: 500; padding-bottom: 3px; border-bottom: 2px solid transparent;
+      transition: border-bottom 0.2s;
+    }
+    nav a:hover {
+      border-bottom: 2px solid #222;
+    }
+    .section {
+      max-width: 950px; margin: 0 auto; padding: 40px 20px;
+    }
+    .gallery {
+      display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 25px; margin-top: 25px;
+    }
+    .gallery img {
+      width: 100%; height: 180px; object-fit: cover; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      background: #eee;
+    }
+    .about, .frames, .contact {
+      margin-bottom: 40px;
+    }
+    h2 {
+      margin-top: 0; font-size: 1.5rem; letter-spacing: 1px;
+      font-weight: 700;
+    }
+    .frames ul {
+      padding-left: 20px;
+    }
+    .contact-info {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    .hours {
+      margin: 20px 0;
+      background: #f7f7f7;
+      padding: 15px 20px;
+      border-radius: 6px;
+      display: inline-block;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center; font-size: 0.94rem; color: #999; margin: 50px 0 15px 0;
+    }
+    @media (max-width: 700px) {
+      header h1 { font-size: 2rem; }
+      .gallery img { height: 120px; }
+      .section { padding: 25px 8px; }
+      .logo-img { width: 120px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Logo image -->
+    <img src="logo.png" alt="Kunstrum Kindhesten Logo" class="logo-img">
+    <h1>Kunstrum Kindhesten</h1>
+    <p>Galleri &amp; rammeværksted i hjertet af Danmark</p>
+    <nav>
+      <a href="#about">Om os</a>
+      <a href="#gallery">Galleri</a>
+      <a href="#frames">Rammeværksted</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="section about" id="about">
+    <h2>Om Kunstrum Kindhesten</h2>
+    <p>
+      Velkommen til Kunstrum Kindhesten – et inspirerende galleri og kvalitetsrammeværksted i Danmark.<br>
+      Her kan du opleve samtidskunst, lokale værker og få professionel indramning til dine egne billeder og kunstværker.
+      <br>Besøg os og lad dig inspirere!
+    </p>
+  </section>
+
+  <section class="section gallery" id="gallery">
+    <h2>Galleri</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Artwork 1">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Artwork 2">
+      <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="Artwork 3">
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Artwork 4">
+    </div>
+  </section>
+
+  <section class="section frames" id="frames">
+    <h2>Rammeværksted</h2>
+    <p>
+      Vi tilbyder professionel indramning til både private og virksomheder.<br>
+      Vælg mellem et bredt udvalg af rammer og materialer – vi hjælper dig med at finde den perfekte løsning til dine billeder.
+    </p>
+    <ul>
+      <li>Specialdesignede rammer</li>
+      <li>Indramning af kunst, plakater, fotos og objekter</li>
+      <li>Bæredygtige og kvalitetsmaterialer</li>
+      <li>Personlig rådgivning i butikken</li>
+    </ul>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Kontakt &amp; åbningstider</h2>
+    <div class="contact-info">
+      <strong>Adresse:</strong> [Din adresse her]<br>
+      <strong>Telefon:</strong> [Dit telefonnummer]<br>
+      <strong>Email:</strong> [Din email her]<br>
+      <strong>Instagram:</strong> <a href="#">@kunstrumkindhesten</a>
+    </div>
+    <div class="hours">
+      <strong>Åbningstider:</strong><br>
+      Mandag - Fredag: 10:00 - 17:00<br>
+      Lørdag: 11:00 - 15:00<br>
+      Søndag: Lukket
+    </div>
+    <!-- Optional: Add a Google Maps embed here -->
+  </section>
+
+  <footer>
+    &copy; 2024 Kunstrum Kindhesten &ndash; Galleri &amp; Rammeværksted | Designet med ❤️ i Danmark
+  </footer>
+</body>
+</html>
